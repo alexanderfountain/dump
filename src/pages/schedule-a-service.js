@@ -2,7 +2,7 @@ import React from "react"
 
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 
-// import Layout from '../structure/Layout';
+import Layout from "../structure/Layout"
 import PageHeader from "../components/PageHeader"
 import TextButton from "../components/buttons/TextButton"
 
@@ -45,73 +45,75 @@ const ScheduleAService = (props) => {
   const breakPoint = useMediaQuery("(min-width: 768px)")
 
   return (
-    // <Layout
-    //     mainStyles={{maxWidth: 768, margin: '0 auto'}}
-    //     hideMobileBtns
-    //     title='Schedule A Waste Service'
-    //     description='Schedule A Dumpster Rental, Recurring Commercial Trash And Recycling Dumpster Pickup Or Residential Trash And Recycling Pickup Online.'
-    //     pageContext={props.pageContext}
-    //     canonicalPath={props.location.pathname}
-    // >
-    <div>
-      <PageHeader
-        title="Select A Service"
-        subTitle="Experience the difference"
-      />
+    <Layout
+      mainStyles={{ maxWidth: 768, margin: "0 auto" }}
+      hideMobileBtns
+      title="Schedule A Waste Service"
+      description="Schedule A Dumpster Rental, Recurring Commercial Trash And Recycling Dumpster Pickup Or Residential Trash And Recycling Pickup Online."
+      pageContext={props.pageContext}
+      canonicalPath={props.location.pathname}
+    >
+      <div>
+        <PageHeader
+          title="Select A Service"
+          subTitle="Experience the difference"
+        />
 
-      <div style={styles.headerBreaker} />
+        <div style={styles.headerBreaker} />
 
-      <div
-        style={{
-          marginBottom: 200,
-          padding: breakPoint ? "0 7px" : "0 20px",
-          display: breakPoint ? "flex" : null,
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
-        {services.map((service) => (
-          <div
-            key={service.label}
-            style={{
-              margin: breakPoint ? "0 0 37px" : "0 auto 22px",
-              padding: breakPoint ? 10 : "0 0 22px",
-              borderRadius: breakPoint ? 4 : 0,
-              width: breakPoint ? "50%" : null,
-              borderWidth: breakPoint ? 1 : "0 0 1px 0",
-              ...styles.itemWrapper,
-            }}
-          >
+        <div
+          style={{
+            marginBottom: 200,
+            padding: breakPoint ? "0 7px" : "0 20px",
+            display: breakPoint ? "flex" : null,
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
+        >
+          {services.map((service) => (
             <div
+              key={service.label}
               style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flex: 1,
+                margin: breakPoint ? "0 0 37px" : "0 auto 22px",
+                padding: breakPoint ? 10 : "0 0 22px",
+                borderRadius: breakPoint ? 4 : 0,
+                width: breakPoint ? "50%" : null,
+                borderWidth: breakPoint ? 1 : "0 0 1px 0",
+                ...styles.itemWrapper,
               }}
             >
-              <div style={styles.iconWrapper}>
-                <service.icon size={39} />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flex: 1,
+                }}
+              >
+                <div style={styles.iconWrapper}>
+                  <service.icon size={39} />
+                </div>
+                <h3 style={{ margin: 0, flex: 1, paddingRight: 10 }}>
+                  {service.label}
+                </h3>
               </div>
-              <h3 style={{ margin: 0, flex: 1, paddingRight: 10 }}>
-                {service.label}
-              </h3>
-            </div>
 
-            <div style={{ marginTop: 17, width: "100%", textAlign: "center" }}>
-              <TextButton to={service.more} styles={{ marginRight: 30 }}>
-                Learn more
-              </TextButton>
+              <div
+                style={{ marginTop: 17, width: "100%", textAlign: "center" }}
+              >
+                <TextButton to={service.more} styles={{ marginRight: 30 }}>
+                  Learn more
+                </TextButton>
 
-              <TextButton to={service.schedule}>
-                {service.scheduleText}
-              </TextButton>
+                <TextButton to={service.schedule}>
+                  {service.scheduleText}
+                </TextButton>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-    // </Layout>
+    </Layout>
   )
 }
 
