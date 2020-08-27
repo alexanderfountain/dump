@@ -1,0 +1,11 @@
+@media (max-width: 634.95px) {
+    .breakImage {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 635px) {
+    .breakImage {
+        flex-direction: row-reverse;
+    }
+}

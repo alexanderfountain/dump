@@ -1,0 +1,47 @@
+---
+key: 'new-jersey'
+name: 'New Jersey'
+title: 'Waste Services In New Jersey'
+description: 'New Jersey Waste Services. Online Ordering. Transparent Pricing Simple Pricing. Friendly Alliance Disposal Team Members Available To Help You.'
+services: ['dumpster-rental']
+level: 'state'
+h1: 'Waste Services in New Jersey'
+headerImagePath: ''
+imagePath: ''
+---
+
+import React from 'react';
+import { Link } from 'gatsby';
+
+import CountyList from '../components/service-areas/CountyList.js';
+import DumpsterRentalCTA from '../components/service-areas/DumpsterRentalCTA.js';
+
+import { counties } from '../constants/geo/new-jersey.js';
+import Paths from '../constants/Paths.js';
+
+## Licensed haulers
+Alliance Disposal only works with A901 licensed haulers in New Jersey. An A901 license is needed to haul any waste in New Jersey that you don't generate directly at your primary residence. Licensed haulers are highly regulated to ensure that your waste is properly disposed of to make sure that we keep the Garden State green and healthy.
+
+Our mission is to achieve carbon neutrality in the waste management industry through innovation, improved efficiency and planting trees. Working with only licensed haulers makes sure that we stay true to our mission by ensuring recyclable loads go to proper facilities and stay out of landfills. 
+
+## Dumpster rentals in New Jersey
+When you rent a dumpster from Alliance Disposal you are making a positive impact in the world. For every dumpster that you rent from us we have one tree planted. Together we can turn the waste management industry around. We can divert more reusable resources from landfills, eliminate the carbon footprint, and have better containment practices so that waste goes where it's supposed to and not into our oceans and forest.
+
+With Alliance Disposal you are not only making a difference, you're getting amazing service too. By matching you with the best hauler for your area and material type you are saving money. Alliance Disposal team members are available seven days a week to help you with all of your waste and recycling needs.
+
+<DumpsterRentalCTA
+    imageAlt='New Jersey dumpster rentals'
+/>
+
+## Commercial dumpsters for New Jersey
+As a business owner or manager you have a lot to deal with on a daily basis, why add waste management to your list. Let Alliance Disposal take care of everything for you. We'll find you the best hauler and make sure that your service runs smoothly.
+
+The best part is, when you go with Alliance Disposal we can save you anywhere from 5% to 50% on your waste bill. By working with all different types of haulers we take the time to match you with the hauler who can serve you best and you take advantage of our special bulk discounts.
+
+## New Jersey residential trash and recycling pickup
+Finding a new garbage company, scheduling a bulk pickup or getting junk removed from your home should not be harder than booking a vacation. At Alliance Disposal we provide you with simple online tools and apps to schedule, modify and control all of your waste management needs.
+
+We are bringing the waste management industry into the twenty-first century. In less than five clicks you can schedule any service you need. Our Alliance Disposal team is also standing by to help you with any special requests you may need. Alliance Disposal is a hospitality company, we just happen to be in the waste management industry. 
+
+## New Jersey counties we service 
+<CountyList counties={counties} />

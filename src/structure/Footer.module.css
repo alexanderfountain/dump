@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+    .changeDisplay {
+        display: flex;
+        justify-content: space-between;
+    }
+}

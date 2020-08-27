@@ -1,0 +1,10 @@
+.h2Class {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 1024px) {
+    .h2Class {
+        margin-bottom: 17px;
+    }
+}

@@ -1,0 +1,41 @@
+.allianceHeader {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.midSection {
+    min-height: 500px;
+}
+
+.missionSubtitle {
+    margin-top: 8px;
+}
+
+@media (min-width: 1024px) {
+    .allianceHeader {
+        margin-bottom: 12px;
+    }
+    .midSection {
+        display: flex;
+        justify-content: center;
+        background-color: #FFFFFF;
+        padding: 0 30px;
+        min-height: 569px;
+    }
+    .midSectionItem {
+        display: flex;
+        background-color: #FAFAFA;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .midSectionLeft {
+        margin-right: 15px;
+    }
+    .midSectionRight {
+        margin-left: 15px;
+    }
+    .missionSubtitle {
+        margin-top: 17px;
+    }
+}

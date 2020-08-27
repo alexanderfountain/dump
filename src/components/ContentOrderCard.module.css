@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+    .itemLeft {
+        margin-right: 13px;
+    }
+
+    .itemRight {
+        margin-left: 13px;
+    }
+}

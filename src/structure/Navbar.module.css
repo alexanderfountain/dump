@@ -1,0 +1,43 @@
+.mobileBtnInnerShadow {
+    -moz-box-shadow:    inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow:         inset 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 -1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mainPadding {
+    padding-top: 62px
+}
+
+.desktopDisplay {
+    display: none;
+}
+
+.mobileDisplay {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    .mainPadding {
+        padding-top: 28px
+    }
+    
+    .mainWidth {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .desktopDisplay {
+        display: flex;
+    }
+
+    .mobileDisplay {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainWidth {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}

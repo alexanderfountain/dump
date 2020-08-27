@@ -1,0 +1,11 @@
+.wrapper {
+    text-align: center;
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .wrapperExtended {
+        max-width: 525px;
+    }
+}

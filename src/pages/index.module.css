@@ -1,0 +1,36 @@
+.contentWrapper {
+    height: 500px;
+}
+
+@media (min-width: 600px) {
+    .emissionsImage {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contentWrapper {
+        min-height: 569px;
+    }
+    .picContentWrapper {
+        max-height: 325px;
+    }
+    .imageWrapperDesktop {
+        width: calc(50vw - 24px);
+        margin-left: calc(50% - 25vw + 12px);
+    }
+    .desktopWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        border-right: 6px solid rgb(255, 255, 255);
+        border-left: 6px solid rgb(255, 255, 255);
+    }
+    .desktopContentWrapper {
+        max-width: 50%;
+        border-right: 6px solid rgb(255, 255, 255);
+        border-left: 6px solid rgb(255, 255, 255);
+        flex: 1;
+        flex-basis: 50%;
+    }
+}

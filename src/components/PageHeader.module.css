@@ -1,0 +1,17 @@
+.wrapper {
+    padding-top: 47px;
+    max-width: 335px;
+}
+
+@media (max-width: 354px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 525px) {
+    .wrapper {
+        max-width: 525px;
+    }
+}
