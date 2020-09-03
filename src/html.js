@@ -28,7 +28,7 @@ export default function HTML(props) {
           }
         ` }} />
 
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        {/* <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="http://www.gstatic.com" />
@@ -44,7 +44,7 @@ export default function HTML(props) {
         <link href="https://www.googletagmanager.com" rel="preconnect" crossOrigin='anonymous' />
         <link href="https://maps.googleapis.com" rel="preconnect" crossOrigin='anonymous' />
         <link href="http://www.gstatic.com" rel="preconnect" crossOrigin='anonymous' />
-        <link href="https://connect.facebook.net" rel="preconnect" crossOrigin='anonymous' />
+        <link href="https://connect.facebook.net" rel="preconnect" crossOrigin='anonymous' /> */}
 
         {props.headComponents}
         
