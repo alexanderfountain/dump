@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, navigate } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { MDXRenderer } from 'gatsby-plugin-mdx';
+// import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import ContactOptions from '../buttons/ContactOptions';
 import ContentWrapper from '../ContentWrapper';
@@ -85,9 +85,9 @@ const TownLayout = (props) => {
                 )
             }
 
-            <MDXRenderer imagePath={props.data.image}>
+            {/* <MDXRenderer imagePath={props.data.image}>
                 {mdx.body}
-            </MDXRenderer>
+            </MDXRenderer> */}
 
             <div style={{background: Colors.allianceBlue, color: '#FFFFFF', margin: '0 -20px', textAlign: 'center'}}>
                 <ContentWrapper
