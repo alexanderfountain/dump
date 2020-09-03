@@ -1,39 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, graphql, navigate } from 'gatsby';
-import Img from 'gatsby-image';
 
-import CircularProgress from '@material-ui/core/CircularProgress';
-
-import classes from './CountyLayout.module.css';
-
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-
-import BlurbSwitcher from './BlurbSwitcher';
-import DisposalRateScore from './DisposalRateScore';
 import Layout from '../../structure/Layout';
-import PrimaryButton from '../buttons/PrimaryButton';
-import TownsList from './TownsList';
 
-import Colors from '../../constants/Colors';
-import Paths from '../../constants/Paths';
-
-const ClientSideOnlyLazy = React.lazy(() =>
-    import("./Map")
-);
 
 const CountyLayout = (props) => {
-    const mdx = props.data.mdx;
-    const mdxData = props.data.mdx.frontmatter;
-    const isSSR = typeof window === "undefined";
 
-    const [towns, setTowns] = useState([]);
-
-    useEffect(() => {
-        const importVar = mdxData.key.split('/')[0];
-        import(`../../constants/geo/${importVar}`).then(item => {
-            setTowns(item[mdxData.townList].towns)
-        });
-    }, []);
 
     return (
         <Layout
