@@ -23,6 +23,7 @@ const TownLayout = (props) => {
             canonicalPath={props.location.pathname}
             restrictWidth
         >
+            <h2>TEST</h2>
 
             {
                 props.data.header
