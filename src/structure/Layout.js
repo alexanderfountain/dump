@@ -30,13 +30,13 @@ const Layout = (props) => {
     return (
         <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
             
-            {/* <Navbar
+            <Navbar
                 bgColor={props.bgColor ? props.bgColor : Colors.mainBg}
                 restrictWidth={props.restrictWidth}
                 headerStyles={props.headerStyles}
                 mainStyles={props.mainStyles}
                 hideMobileBtns={props.hideMobileBtns}
-            > */}
+            >
 
                 {/* {
                     props.flash
@@ -50,7 +50,7 @@ const Layout = (props) => {
                         : null
                 } */}
 
-                {/* <SEO
+                <SEO
                     title={props.title}
                     description={props.description}
                     socialTitle={props.socialTitle}
@@ -61,14 +61,14 @@ const Layout = (props) => {
                     isBlogPost={props.isBlogPost}
                     datePublished={props.datePublished}
                     metaImage={props.metaImage}
-                /> */}
+                />
 
                 {props.children}
 
-            {/* </Navbar> */}
-            {/* <Footer
+            </Navbar>
+            <Footer
                 breadcrumbs={props.pageContext ? props.pageContext.breadcrumb : null}
-            /> */}
+            />
         </div>
     );
 };
