@@ -30,7 +30,7 @@ const CountyLayout = (props) => {
     }, []);
 
     return (
-        <div
+        <Layout
             // title={mdxData.title}
             // description={mdxData.description}
             // bgColor='#FFFFFF'
@@ -212,7 +212,7 @@ const CountyLayout = (props) => {
 
             </div>
 
-        </div>
+        </Layout>
     );
 };
 

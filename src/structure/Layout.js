@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import SEO from './SEO';
 
-import FlashMessage from '../components/FlashMessage';
+// import FlashMessage from '../components/FlashMessage';
 
 import Colors from '../constants/Colors';
 /**
@@ -38,7 +38,7 @@ const Layout = (props) => {
                 hideMobileBtns={props.hideMobileBtns}
             >
 
-                {
+                {/* {
                     props.flash
                         ? (
                             <FlashMessage
@@ -48,9 +48,9 @@ const Layout = (props) => {
                             />
                         )
                         : null
-                }
+                } */}
 
-                <SEO
+                {/* <SEO
                     title={props.title}
                     description={props.description}
                     socialTitle={props.socialTitle}
@@ -61,7 +61,7 @@ const Layout = (props) => {
                     isBlogPost={props.isBlogPost}
                     datePublished={props.datePublished}
                     metaImage={props.metaImage}
-                />
+                /> */}
 
                 {props.children}
 
