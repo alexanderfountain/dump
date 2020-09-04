@@ -63,7 +63,7 @@ const Layout = (props) => {
                     metaImage={props.metaImage}
                 /> */}
 
-                {/* {props.children} */}
+                {props.children}
 
             {/* </Navbar> */}
             {/* <Footer
