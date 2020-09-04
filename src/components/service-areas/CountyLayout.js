@@ -16,9 +16,9 @@ import Paths from '../../constants/Paths';
 // );
 
 const CountyLayout = (props) => {
-    const mdx = props.data.mdx;
-    const mdxData = props.data.mdx.frontmatter;
-    const isSSR = typeof window === "undefined";
+    // const mdx = props.data.mdx;
+    // const mdxData = props.data.mdx.frontmatter;
+    // const isSSR = typeof window === "undefined";
 
     // const [towns, setTowns] = useState([]);
 
@@ -30,189 +30,190 @@ const CountyLayout = (props) => {
     // }, []);
 
     return (
-        <Layout
-            // title={mdxData.title}
-            // description={mdxData.description}
-            // bgColor='#FFFFFF'
-            // mainStyles={{paddingLeft: 20, paddingRight: 20, marginBottom: 70}}
-            // pageContext={props.pageContext}
-            // canonicalPath={props.location.pathname}
-            // restrictWidth
-            // additionalSchema={[{
-            //     '@context': 'https://schema.org',
-            //     '@type': 'Service',
-            //     name: `Dumpster Rentals in ${mdxData.name} County, ${mdxData.state}`,
-            //     areaServed: [
-            //         {
-            //             '@type': 'AdministrativeArea',
-            //             name: `${mdxData.name} County`
-            //         }
-            //     ],
-            //     availableChannel: {
-            //         availableLanguage: ['en-US', 'es-419'],
-            //         serviceUrl: Paths.mainUrl + Paths.orderRollOff.slice(1),
-            //         servicePhone: Paths.tel,
-            //         serviceSmsNumber: Paths.tel
-            //     },
-            //     brand: 'Alliance Disposal',
-            //     logo: Paths.logoPath,
-            //     serviceType: 'Dumpster Rental',
-            //     termsOfService: Paths.mainUrl + Paths.tos.slice(1),
-            //     slogan: 'Same Day Delivery Available, Next Business Day Delivery Guaranteed.',
-            //     serviceOutput: 'Debris removal',
-            //     hoursAvailable: [
-            //         'Mon-Sun 07:00 - 19:00'
-            //     ]
-            // }]}
-        >
+        <h2>ttt</h2>
+//         <Layout
+//             // title={mdxData.title}
+//             // description={mdxData.description}
+//             // bgColor='#FFFFFF'
+//             // mainStyles={{paddingLeft: 20, paddingRight: 20, marginBottom: 70}}
+//             // pageContext={props.pageContext}
+//             // canonicalPath={props.location.pathname}
+//             // restrictWidth
+//             // additionalSchema={[{
+//             //     '@context': 'https://schema.org',
+//             //     '@type': 'Service',
+//             //     name: `Dumpster Rentals in ${mdxData.name} County, ${mdxData.state}`,
+//             //     areaServed: [
+//             //         {
+//             //             '@type': 'AdministrativeArea',
+//             //             name: `${mdxData.name} County`
+//             //         }
+//             //     ],
+//             //     availableChannel: {
+//             //         availableLanguage: ['en-US', 'es-419'],
+//             //         serviceUrl: Paths.mainUrl + Paths.orderRollOff.slice(1),
+//             //         servicePhone: Paths.tel,
+//             //         serviceSmsNumber: Paths.tel
+//             //     },
+//             //     brand: 'Alliance Disposal',
+//             //     logo: Paths.logoPath,
+//             //     serviceType: 'Dumpster Rental',
+//             //     termsOfService: Paths.mainUrl + Paths.tos.slice(1),
+//             //     slogan: 'Same Day Delivery Available, Next Business Day Delivery Guaranteed.',
+//             //     serviceOutput: 'Debris removal',
+//             //     hoursAvailable: [
+//             //         'Mon-Sun 07:00 - 19:00'
+//             //     ]
+//             // }]}
+//         >
   
-            {
-                props.data.header
-                ? (
-                    <div
-                        style={{position: 'relative', height: 300, margin: '0 -20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', backgroundColor: Colors.allianceBlue}}
-                        className='county-layout-image-wrapper'
-                    >
-                        <Img
-                            fluid={props.data.header.childImageSharp.fluid}
-                            alt={`${mdxData.name} county ${mdxData.state} dumpster rentals`}
-                            style={{
-                                position: 'absolute',
-                                left: 0,
-                                top: 0,
-                                width: '100%',
-                                height: '100%',
-                            }}
-                            loading="eager"
-                            fadeIn={false}
-                        />
+//             {
+//                 props.data.header
+//                 ? (
+//                     <div
+//                         style={{position: 'relative', height: 300, margin: '0 -20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', backgroundColor: Colors.allianceBlue}}
+//                         className='county-layout-image-wrapper'
+//                     >
+//                         <Img
+//                             fluid={props.data.header.childImageSharp.fluid}
+//                             alt={`${mdxData.name} county ${mdxData.state} dumpster rentals`}
+//                             style={{
+//                                 position: 'absolute',
+//                                 left: 0,
+//                                 top: 0,
+//                                 width: '100%',
+//                                 height: '100%',
+//                             }}
+//                             loading="eager"
+//                             fadeIn={false}
+//                         />
 
-                        <div
-                            style={{zIndex: 2, position: 'relative', color: '#FFFFFF', backgroundColor: 'rgba(6, 56, 82, 0.48)', textAlign: 'center', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}
-                        >
-                            <h1>
-                                {mdxData.h1}
-                            </h1>
+//                         <div
+//                             style={{zIndex: 2, position: 'relative', color: '#FFFFFF', backgroundColor: 'rgba(6, 56, 82, 0.48)', textAlign: 'center', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}
+//                         >
+//                             <h1>
+//                                 {mdxData.h1}
+//                             </h1>
 
-                            {/* <PrimaryButton
-                                onClick={() => navigate(Paths.orderRollOff)}
-                                style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn}}
-                                fullWidth
-                            >
-                                Get Pricing
-                            </PrimaryButton> */}
+//                             {/* <PrimaryButton
+//                                 onClick={() => navigate(Paths.orderRollOff)}
+//                                 style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn}}
+//                                 fullWidth
+//                             >
+//                                 Get Pricing
+//                             </PrimaryButton> */}
 
-                        </div>
-                    </div>
-                )
-                : (
-                    <div
-                        style={{padding: '40px 20px 20px', backgroundColor: Colors.allianceBlue, margin: '0 -20px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexDirection: 'column'}}
-                    >
-                        <h1
-                            style={{color: '#FFFFFF'}}
-                        >
-                            {mdxData.h1}
-                        </h1>
+//                         </div>
+//                     </div>
+//                 )
+//                 : (
+//                     <div
+//                         style={{padding: '40px 20px 20px', backgroundColor: Colors.allianceBlue, margin: '0 -20px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexDirection: 'column'}}
+//                     >
+//                         <h1
+//                             style={{color: '#FFFFFF'}}
+//                         >
+//                             {mdxData.h1}
+//                         </h1>
 
-                        {/* <PrimaryButton
-                            onClick={() => navigate(Paths.orderRollOff)}
-                            style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn, marginTop: 20}}
-                            fullWidth
-                        >
-                            Get Pricing
-                        </PrimaryButton> */}
+//                         {/* <PrimaryButton
+//                             onClick={() => navigate(Paths.orderRollOff)}
+//                             style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn, marginTop: 20}}
+//                             fullWidth
+//                         >
+//                             Get Pricing
+//                         </PrimaryButton> */}
 
-                    </div>
-                )
-            }
+//                     </div>
+//                 )
+//             }
 
-            <div className='countyLayoutWrapper'>
+//             <div className='countyLayoutWrapper'>
 
-                {/* <MDXRenderer imagePath={props.data.image}>
-                    {mdx.body}
-                </MDXRenderer> */}
+//                 {/* <MDXRenderer imagePath={props.data.image}>
+//                     {mdx.body}
+//                 </MDXRenderer> */}
     
-                <h2>
-                    {mdxData.townListHeader}
-                </h2>
+//                 <h2>
+//                     {mdxData.townListHeader}
+//                 </h2>
 
-                <p>
-                    {mdxData.townListPara}
-                </p>
+//                 <p>
+//                     {mdxData.townListPara}
+//                 </p>
 
-                {/* <TownsList
-                    county={mdxData.name}
-                    towns={towns}
-                /> */}
+//                 {/* <TownsList
+//                     county={mdxData.name}
+//                     towns={towns}
+//                 /> */}
 
-                {
-                    // !isSSR && (
-                    //     <React.Suspense fallback={<CircularProgress color="secondary" />}>
-                    //         <ClientSideOnlyLazy source={mdxData.map} title={mdxData.title} />
-                    //     </React.Suspense>
-                    // )
-                }
+//                 {
+//                     // !isSSR && (
+//                     //     <React.Suspense fallback={<CircularProgress color="secondary" />}>
+//                     //         <ClientSideOnlyLazy source={mdxData.map} title={mdxData.title} />
+//                     //     </React.Suspense>
+//                     // )
+//                 }
 
-                <h2>
-                    {mdxData.disposalRateHeader}
-                </h2>
-                {/* <DisposalRateScore
-                    price={+mdxData.disposalRate}
-                    paragraph={mdxData.disposalRatePara}
-                /> */}
-{/* 
-                <BlurbSwitcher
-                    oneWrapper={mdxData.blurbOne}
-                    onePara={mdxData.blurbOnePara}
-                    twoWrapper={mdxData.blurbTwo}
-                    twoPara={mdxData.blurbTwoPara}
-                /> */}
+//                 <h2>
+//                     {mdxData.disposalRateHeader}
+//                 </h2>
+//                 {/* <DisposalRateScore
+//                     price={+mdxData.disposalRate}
+//                     paragraph={mdxData.disposalRatePara}
+//                 /> */}
+// {/* 
+//                 <BlurbSwitcher
+//                     oneWrapper={mdxData.blurbOne}
+//                     onePara={mdxData.blurbOnePara}
+//                     twoWrapper={mdxData.blurbTwo}
+//                     twoPara={mdxData.blurbTwoPara}
+//                 /> */}
                 
-                <div>
-                    <table
-                        style={{margin: '30px auto 60px', borderCollapse: 'collapse'}}
-                    >
-                        <thead>
-                            <tr>
-                                <th
-                                    colSpan={2}
-                                    style={{backgroundColor: Colors.allianceBlue, color: '#FFFFFF', borderTopRightRadius: 4, borderTopLeftRadius: 4, padding: 10}}
-                                >
-                                    All services offered in {mdxData.name} County
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style={styles.cell}>
-                                    {
-                                        mdxData.services.includes('dumpster-rental')
-                                            ? <Link to={`/service-areas/${mdxData.key}-county-${mdxData.state.toLowerCase()}-dumpster-rental/`}>
-                                                Dumpster rentals
-                                            </Link>
-                                            : <>Dumpster rentals</>
-                                    }
-                                </td>
-                                <td style={styles.cell}>
-                                    Recurring trash &amp; recycling pickup for businesses
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style={styles.cell}>
-                                    Residential curbside trash and recycling pickup
-                                </td>
-                                <td style={styles.cell}>
-                                    Junk removal
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+//                 <div>
+//                     <table
+//                         style={{margin: '30px auto 60px', borderCollapse: 'collapse'}}
+//                     >
+//                         <thead>
+//                             <tr>
+//                                 <th
+//                                     colSpan={2}
+//                                     style={{backgroundColor: Colors.allianceBlue, color: '#FFFFFF', borderTopRightRadius: 4, borderTopLeftRadius: 4, padding: 10}}
+//                                 >
+//                                     All services offered in {mdxData.name} County
+//                                 </th>
+//                             </tr>
+//                         </thead>
+//                         <tbody>
+//                             <tr>
+//                                 <td style={styles.cell}>
+//                                     {
+//                                         mdxData.services.includes('dumpster-rental')
+//                                             ? <Link to={`/service-areas/${mdxData.key}-county-${mdxData.state.toLowerCase()}-dumpster-rental/`}>
+//                                                 Dumpster rentals
+//                                             </Link>
+//                                             : <>Dumpster rentals</>
+//                                     }
+//                                 </td>
+//                                 <td style={styles.cell}>
+//                                     Recurring trash &amp; recycling pickup for businesses
+//                                 </td>
+//                             </tr>
+//                             <tr>
+//                                 <td style={styles.cell}>
+//                                     Residential curbside trash and recycling pickup
+//                                 </td>
+//                                 <td style={styles.cell}>
+//                                     Junk removal
+//                                 </td>
+//                             </tr>
+//                         </tbody>
+//                     </table>
+//                 </div>
 
-            </div>
+//             </div>
 
-        </Layout>
+//         </Layout>
     );
 };
 
