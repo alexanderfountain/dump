@@ -16,9 +16,9 @@ import Paths from '../../constants/Paths';
 // );
 
 const CountyLayout = (props) => {
-    // const mdx = props.data.mdx;
-    // const mdxData = props.data.mdx.frontmatter;
-    // const isSSR = typeof window === "undefined";
+    const mdx = props.data.mdx;
+    const mdxData = props.data.mdx.frontmatter;
+    const isSSR = typeof window === "undefined";
 
     // const [towns, setTowns] = useState([]);
 
