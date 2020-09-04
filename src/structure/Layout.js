@@ -30,13 +30,13 @@ const Layout = (props) => {
     return (
         <div style={{minHeight: '100vh', display: 'flex', flexDirection: 'column'}}>
             
-            <Navbar
+            {/* <Navbar
                 bgColor={props.bgColor ? props.bgColor : Colors.mainBg}
                 restrictWidth={props.restrictWidth}
                 headerStyles={props.headerStyles}
                 mainStyles={props.mainStyles}
                 hideMobileBtns={props.hideMobileBtns}
-            >
+            > */}
 
                 {/* {
                     props.flash
@@ -65,7 +65,7 @@ const Layout = (props) => {
 
                 {/* {props.children} */}
 
-            </Navbar>
+            {/* </Navbar> */}
             {/* <Footer
                 breadcrumbs={props.pageContext ? props.pageContext.breadcrumb : null}
             /> */}
