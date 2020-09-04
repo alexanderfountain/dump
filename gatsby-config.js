@@ -34,6 +34,18 @@ module.exports = {
 				path: `${__dirname}/src/assets/images`,
 			},
 		},
+		{
+			resolve: "gatsby-plugin-preconnect",
+			options: {
+			  domains: [
+				"https://www.google-analytics.com",
+				"https://www.googletagmanager.com",
+				"https://maps.googleapis.com",
+				"https://www.gstatic.com",
+				"https://connect.facebook.net"
+			  ],
+			},
+		  },
 		"gatsby-remark-images",
 		{
 			resolve: `gatsby-plugin-mdx`,
