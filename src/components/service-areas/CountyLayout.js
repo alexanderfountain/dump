@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Link, graphql, navigate } from 'gatsby';
+import React from 'react';
+import { Link, graphql} from 'gatsby';
 import Img from 'gatsby-image';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import BlurbSwitcher from './BlurbSwitcher';
-import DisposalRateScore from './DisposalRateScore';
+// import CircularProgress from '@material-ui/core/CircularProgress';
+// import { MDXRenderer } from 'gatsby-plugin-mdx';
+// import BlurbSwitcher from './BlurbSwitcher';
+// import DisposalRateScore from './DisposalRateScore';
 import Layout from '../../structure/Layout';
-import PrimaryButton from '../buttons/PrimaryButton';
-import TownsList from './TownsList';
+// import PrimaryButton from '../buttons/PrimaryButton';
+// import TownsList from './TownsList';
 import Colors from '../../constants/Colors';
 import Paths from '../../constants/Paths';
 
