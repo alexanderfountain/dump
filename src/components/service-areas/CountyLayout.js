@@ -31,39 +31,39 @@ const CountyLayout = (props) => {
 
     return (
         <Layout
-            title={mdxData.title}
-            description={mdxData.description}
-            bgColor='#FFFFFF'
-            mainStyles={{paddingLeft: 20, paddingRight: 20, marginBottom: 70}}
-            pageContext={props.pageContext}
-            canonicalPath={props.location.pathname}
-            restrictWidth
-            additionalSchema={[{
-                '@context': 'https://schema.org',
-                '@type': 'Service',
-                name: `Dumpster Rentals in ${mdxData.name} County, ${mdxData.state}`,
-                areaServed: [
-                    {
-                        '@type': 'AdministrativeArea',
-                        name: `${mdxData.name} County`
-                    }
-                ],
-                availableChannel: {
-                    availableLanguage: ['en-US', 'es-419'],
-                    serviceUrl: Paths.mainUrl + Paths.orderRollOff.slice(1),
-                    servicePhone: Paths.tel,
-                    serviceSmsNumber: Paths.tel
-                },
-                brand: 'Alliance Disposal',
-                logo: Paths.logoPath,
-                serviceType: 'Dumpster Rental',
-                termsOfService: Paths.mainUrl + Paths.tos.slice(1),
-                slogan: 'Same Day Delivery Available, Next Business Day Delivery Guaranteed.',
-                serviceOutput: 'Debris removal',
-                hoursAvailable: [
-                    'Mon-Sun 07:00 - 19:00'
-                ]
-            }]}
+            // title={mdxData.title}
+            // description={mdxData.description}
+            // bgColor='#FFFFFF'
+            // mainStyles={{paddingLeft: 20, paddingRight: 20, marginBottom: 70}}
+            // pageContext={props.pageContext}
+            // canonicalPath={props.location.pathname}
+            // restrictWidth
+            // additionalSchema={[{
+            //     '@context': 'https://schema.org',
+            //     '@type': 'Service',
+            //     name: `Dumpster Rentals in ${mdxData.name} County, ${mdxData.state}`,
+            //     areaServed: [
+            //         {
+            //             '@type': 'AdministrativeArea',
+            //             name: `${mdxData.name} County`
+            //         }
+            //     ],
+            //     availableChannel: {
+            //         availableLanguage: ['en-US', 'es-419'],
+            //         serviceUrl: Paths.mainUrl + Paths.orderRollOff.slice(1),
+            //         servicePhone: Paths.tel,
+            //         serviceSmsNumber: Paths.tel
+            //     },
+            //     brand: 'Alliance Disposal',
+            //     logo: Paths.logoPath,
+            //     serviceType: 'Dumpster Rental',
+            //     termsOfService: Paths.mainUrl + Paths.tos.slice(1),
+            //     slogan: 'Same Day Delivery Available, Next Business Day Delivery Guaranteed.',
+            //     serviceOutput: 'Debris removal',
+            //     hoursAvailable: [
+            //         'Mon-Sun 07:00 - 19:00'
+            //     ]
+            // }]}
         >
   
             {
