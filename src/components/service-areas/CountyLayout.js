@@ -1,33 +1,33 @@
-import React from 'react';
-import { Link, graphql} from 'gatsby';
+import React, { useState, useEffect } from 'react';
+import { Link, graphql, navigate } from 'gatsby';
 import Img from 'gatsby-image';
-// import CircularProgress from '@material-ui/core/CircularProgress';
-// import { MDXRenderer } from 'gatsby-plugin-mdx';
-// import BlurbSwitcher from './BlurbSwitcher';
-// import DisposalRateScore from './DisposalRateScore';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import BlurbSwitcher from './BlurbSwitcher';
+import DisposalRateScore from './DisposalRateScore';
 import Layout from '../../structure/Layout';
-// import PrimaryButton from '../buttons/PrimaryButton';
-// import TownsList from './TownsList';
+import PrimaryButton from '../buttons/PrimaryButton';
+import TownsList from './TownsList';
 import Colors from '../../constants/Colors';
 import Paths from '../../constants/Paths';
 
-// const ClientSideOnlyLazy = React.lazy(() =>
-//     import("./Map")
-// );
+const ClientSideOnlyLazy = React.lazy(() =>
+    import("./Map")
+);
 
 const CountyLayout = (props) => {
     const mdx = props.data.mdx;
     const mdxData = props.data.mdx.frontmatter;
     const isSSR = typeof window === "undefined";
 
-    // const [towns, setTowns] = useState([]);
+    const [towns, setTowns] = useState([]);
 
-    // useEffect(() => {
-    //     const importVar = mdxData.key.split('/')[0];
-    //     import(`../../constants/geo/${importVar}`).then(item => {
-    //         setTowns(item[mdxData.townList].towns)
-    //     });
-    // }, []);
+    useEffect(() => {
+        const importVar = mdxData.key.split('/')[0];
+        import(`../../constants/geo/${importVar}`).then(item => {
+            setTowns(item[mdxData.townList].towns)
+        });
+    }, []);
 
     return (
         <div
@@ -94,13 +94,13 @@ const CountyLayout = (props) => {
                                 {mdxData.h1}
                             </h1>
 
-                            {/* <PrimaryButton
+                            <PrimaryButton
                                 onClick={() => navigate(Paths.orderRollOff)}
                                 style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn}}
                                 fullWidth
                             >
                                 Get Pricing
-                            </PrimaryButton> */}
+                            </PrimaryButton>
 
                         </div>
                     </div>
@@ -115,13 +115,13 @@ const CountyLayout = (props) => {
                             {mdxData.h1}
                         </h1>
 
-                        {/* <PrimaryButton
+                        <PrimaryButton
                             onClick={() => navigate(Paths.orderRollOff)}
                             style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn, marginTop: 20}}
                             fullWidth
                         >
                             Get Pricing
-                        </PrimaryButton> */}
+                        </PrimaryButton>
 
                     </div>
                 )
@@ -129,9 +129,9 @@ const CountyLayout = (props) => {
 
             <div className='countyLayoutWrapper'>
 
-                {/* <MDXRenderer imagePath={props.data.image}>
+                <MDXRenderer imagePath={props.data.image}>
                     {mdx.body}
-                </MDXRenderer> */}
+                </MDXRenderer>
     
                 <h2>
                     {mdxData.townListHeader}
@@ -141,33 +141,33 @@ const CountyLayout = (props) => {
                     {mdxData.townListPara}
                 </p>
 
-                {/* <TownsList
+                <TownsList
                     county={mdxData.name}
                     towns={towns}
-                /> */}
+                />
 
                 {
-                    // !isSSR && (
-                    //     <React.Suspense fallback={<CircularProgress color="secondary" />}>
-                    //         <ClientSideOnlyLazy source={mdxData.map} title={mdxData.title} />
-                    //     </React.Suspense>
-                    // )
+                    !isSSR && (
+                        <React.Suspense fallback={<CircularProgress color="secondary" />}>
+                            <ClientSideOnlyLazy source={mdxData.map} title={mdxData.title} />
+                        </React.Suspense>
+                    )
                 }
 
                 <h2>
                     {mdxData.disposalRateHeader}
                 </h2>
-                {/* <DisposalRateScore
+                <DisposalRateScore
                     price={+mdxData.disposalRate}
                     paragraph={mdxData.disposalRatePara}
-                /> */}
-{/* 
+                />
+
                 <BlurbSwitcher
                     oneWrapper={mdxData.blurbOne}
                     onePara={mdxData.blurbOnePara}
                     twoWrapper={mdxData.blurbTwo}
                     twoPara={mdxData.blurbTwoPara}
-                /> */}
+                />
                 
                 <div>
                     <table
