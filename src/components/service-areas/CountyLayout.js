@@ -94,13 +94,13 @@ const CountyLayout = (props) => {
                                 {mdxData.h1}
                             </h1>
 
-                            <PrimaryButton
+                            {/* <PrimaryButton
                                 onClick={() => navigate(Paths.orderRollOff)}
                                 style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn}}
                                 fullWidth
                             >
                                 Get Pricing
-                            </PrimaryButton>
+                            </PrimaryButton> */}
 
                         </div>
                     </div>
@@ -115,13 +115,13 @@ const CountyLayout = (props) => {
                             {mdxData.h1}
                         </h1>
 
-                        <PrimaryButton
+                        {/* <PrimaryButton
                             onClick={() => navigate(Paths.orderRollOff)}
                             style={{maxWidth: 335, backgroundColor: Colors.altSecondaryBtn, marginTop: 20}}
                             fullWidth
                         >
                             Get Pricing
-                        </PrimaryButton>
+                        </PrimaryButton> */}
 
                     </div>
                 )
@@ -129,9 +129,9 @@ const CountyLayout = (props) => {
 
             <div className='countyLayoutWrapper'>
 
-                <MDXRenderer imagePath={props.data.image}>
+                {/* <MDXRenderer imagePath={props.data.image}>
                     {mdx.body}
-                </MDXRenderer>
+                </MDXRenderer> */}
     
                 <h2>
                     {mdxData.townListHeader}
@@ -157,17 +157,17 @@ const CountyLayout = (props) => {
                 <h2>
                     {mdxData.disposalRateHeader}
                 </h2>
-                <DisposalRateScore
+                {/* <DisposalRateScore
                     price={+mdxData.disposalRate}
                     paragraph={mdxData.disposalRatePara}
-                />
-
+                /> */}
+{/* 
                 <BlurbSwitcher
                     oneWrapper={mdxData.blurbOne}
                     onePara={mdxData.blurbOnePara}
                     twoWrapper={mdxData.blurbTwo}
                     twoPara={mdxData.blurbTwoPara}
-                />
+                /> */}
                 
                 <div>
                     <table
